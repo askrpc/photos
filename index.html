@@ -24,7 +24,7 @@ photos:
 ---
 
 <ul class="gallery">
-	{% for photo in page.photos %}
+	{% for photo in page.photos reversed %}
 		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
 	{% endfor %}
 	<li class="spacer"></li>
