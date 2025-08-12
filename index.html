@@ -2,13 +2,13 @@
 title: Home
 photos:
   - image: /uploads/1-westminster.JPG
-    caption: You are not alone - Westminster Bridge, London, UK
+    caption: You are not alone - 𖡡 Westminster Bridge, London, UK
   - image: /uploads/2-oxford.JPG
-    caption: Oxford, UK
+    caption: 𖡡 Oxford, UK
   - image: /uploads/3-arboretum.JPG
-    caption: Peace - Harcourt Arboretum, Oxfordshire, UK
+    caption: Peace - 𖡡 Harcourt Arboretum, Oxfordshire, UK
   - image: /uploads/4-oxford.JPG
-    caption: Up! - Oxford, UK
+    caption: Up! - 𖡡 Oxford, UK
   - image: /uploads/5-oxford.JPG
     caption: Oxford, UK
   - image: /uploads/6-oxford.JPG
@@ -34,7 +34,6 @@ photos:
     caption: Banksy, London, UK
   - image: /uploads/15-london.JPG
     caption: British Museum, London, UK
-
   - image: /uploads/16-london.JPG
     caption: British Museum, London, UK
   - image: /uploads/17-oxfordshire.JPG
@@ -45,7 +44,7 @@ photos:
 
 <ul class="gallery">
 	{% for photo in page.photos reversed %}
-		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "1200x1200>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
+		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
 	{% endfor %}
 	<li class="spacer"></li>
 	<li class="spacer"></li>
