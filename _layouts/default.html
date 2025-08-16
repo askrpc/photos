@@ -15,10 +15,6 @@
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
 
-		<script>
-		  // Automatically updates the year
-		  document.getElementById("year").textContent = new Date().getFullYear();
-		</script>
 		{% comment %}
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -43,5 +39,10 @@
 				<p>&copy; <span id="year"></span> Rahul Pandey. All rights reserved.</p>
 			</footer>
 		</div>
+				<script>
+		  // Automatically updates the year
+		  document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
 	</body>
+	
 </html>
